@@ -3,6 +3,7 @@ Installation scripts for the development of embedded Linux/Julia deep learning a
 (work in progress)
 
 ### Scripts:
+* Linux
 * CUDA-Toolkit
 * Julia
 * Docker
