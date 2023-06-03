@@ -7,6 +7,6 @@
 5- Install SAM:                         sh sam-install.sh\
 \
 Enable CVAT:                            sh cvat-up.sh\
-Disable CVAT:                           sh cvat-down.sh\
+Disable CVAT:                           sh cvat-down.sh
 
 CVAT is accessed at https://localhost:8080
