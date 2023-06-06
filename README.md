@@ -8,3 +8,6 @@ Installation scripts for the development of embedded Linux/Julia deep learning a
 * Julia
 * Docker
 * CVAT
+
+### Other scripts:
+* R
