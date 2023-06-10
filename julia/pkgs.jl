@@ -28,6 +28,12 @@ Pkg.add("GLM")
 # Pkg.add("ScikitLearn")
 # Pkg.add("ObjectDetector")   # yolo
 
+# i/o
+Pkg.add("FileIO")
+Pkg.add("ImageIO")
+# Pkg.add("GLMakie")   # before VideoIO
+Pkg.add("VideoIO")
+
 # math
 Pkg.add("LinearAlgebra")
 Pkg.add("Metrics")
@@ -42,13 +48,12 @@ Pkg.add("Printf")
 
 # media
 Pkg.add("Colors")
+Pkg.add("ImageCore")
 Pkg.add("Images")
-# Pkg.add("ImageView")
 Pkg.add("ImageTransformations")
 Pkg.add("ImageDraw")
+# Pkg.add("ImageView")
 # Pkg.add("OpenCV")
-# Pkg.add("GLMakie")
-Pkg.add("VideoIO")
 # Pkg.add("PerceptualColourMaps")   # depends on python matplotlib
 
 # hpc
@@ -59,7 +64,6 @@ Pkg.add("FLoops")
 Pkg.add("CSV")
 Pkg.add("DataFrames")
 Pkg.add("DataStructures")   # stacks, queues, ...
-Pkg.add("FileIO")
 Pkg.add("ImageIO")
 Pkg.add("ArgParse")
 Pkg.add("BSON")
@@ -69,6 +73,7 @@ Pkg.add("JLD2")
 Pkg.add("PyCall")
 Pkg.add("BenchmarkTools")
 Pkg.add("PkgTemplates")
+Pkg.add("PackageCompiler")
 
 # cuda
 Pkg.add("CUDA")
