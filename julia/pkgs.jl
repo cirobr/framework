@@ -31,7 +31,6 @@ Pkg.add("GLM")
 # i/o
 Pkg.add("FileIO")
 Pkg.add("ImageIO")
-# Pkg.add("GLMakie")   # before VideoIO
 Pkg.add("VideoIO")
 
 # math
@@ -55,6 +54,7 @@ Pkg.add("ImageDraw")
 # Pkg.add("ImageView")
 # Pkg.add("OpenCV")
 # Pkg.add("PerceptualColourMaps")   # depends on python matplotlib
+# Pkg.add("GLMakie")   # "using GLMakie" must come before "using VideoIO"
 
 # hpc
 Pkg.add("Distributed")
