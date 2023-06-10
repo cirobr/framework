@@ -4,7 +4,7 @@ Installation scripts for the development of embedded Linux/Julia deep learning a
 
 ### Scripts:
 * Linux
-* CUDA-Toolkit
+* CUDA-Toolkit (pre-requisite: NVIDIA driver)
 * Julia
 * Docker
 * CVAT
