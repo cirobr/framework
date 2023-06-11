@@ -1,17 +1,15 @@
 #!/bin/bash
 ### https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu
 clear
-# sudo apt update
+sudo apt update
 
 # get distribution
 distro="ubuntu2204"
 
 # get architecture
 if [ "$(uname -m)" = "x86_64" ]; then
-    echo "x86"
     arch="x86_64"
 elif [ "$(uname -m)" = "aarch64" ]; then
-    echo "arm"
     arch="sbsa"
 else
     echo "wrong arch"
