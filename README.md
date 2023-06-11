@@ -11,4 +11,5 @@ Installation scripts for the development of embedded Linux/Julia deep learning a
 * CVAT
 
 ### Other scripts:
+* Miniconda
 * R
