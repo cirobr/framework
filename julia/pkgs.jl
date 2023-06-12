@@ -76,9 +76,9 @@ Pkg.add("PkgTemplates")
 Pkg.add("PackageCompiler")
 
 # cuda
-Pkg.add("CUDA")
-using CUDA
-if CUDA.has_cuda_gpu()   CUDA.versioninfo()   end
+# Pkg.add("CUDA")
+# using CUDA
+# if CUDA.has_cuda_gpu()   CUDA.versioninfo()   end
 
 #build
 Pkg.update()
