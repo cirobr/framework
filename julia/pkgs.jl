@@ -46,9 +46,10 @@ Pkg.add("StatsPlots")
 Pkg.add("Printf")
 
 # media
-Pkg.add("Colors")
-Pkg.add("ImageCore")
 Pkg.add("Images")
+Pkg.add("Colors")
+# Pkg.add("ImageCore")
+# Pkg.add("ImageShow")   # to display large images
 Pkg.add("ImageTransformations")
 Pkg.add("ImageDraw")
 # Pkg.add("ImageView")
@@ -64,7 +65,6 @@ Pkg.add("FLoops")
 Pkg.add("CSV")
 Pkg.add("DataFrames")
 Pkg.add("DataStructures")   # stacks, queues, ...
-Pkg.add("ImageIO")
 Pkg.add("ArgParse")
 Pkg.add("BSON")
 Pkg.add("JLD2")
