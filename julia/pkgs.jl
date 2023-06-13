@@ -48,9 +48,6 @@ Pkg.add("Printf")
 # media
 Pkg.add("Images")
 Pkg.add("Colors")
-# Pkg.add("ImageCore")
-# Pkg.add("ImageShow")   # to display large images
-Pkg.add("ImageTransformations")
 Pkg.add("ImageDraw")
 # Pkg.add("ImageView")
 # Pkg.add("OpenCV")
