@@ -14,7 +14,7 @@ Pkg.add("IJulia")
 Pkg.add(url="git@github.com:cirobr/PreprocessingImages.jl.git")
 Pkg.add(url="git@github.com:cirobr/UNetFlux.jl.git")
 
-#ai/ml
+# ai/ml
 Pkg.add("Flux")
 Pkg.add("MLJ")
 Pkg.add("MLJFlux")
