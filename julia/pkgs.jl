@@ -2,9 +2,9 @@ using Pkg
 Pkg.update()
 
 # development environment
-# foldername = expanduser("~/juliaenvs/dev/")
-# mkdir(foldername)
-# Pkg.activate(foldername)
+foldername = expanduser("~/juliaenvs/dev/")
+mkdir(foldername)
+Pkg.activate(foldername)
 
 # jupyter interface
 Pkg.add("IJulia")
