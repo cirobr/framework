@@ -16,6 +16,7 @@ Pkg.add(url="git@github.com:cirobr/UNetFlux.jl.git")
 
 # ai/ml
 Pkg.add("Flux")
+# Pkg.add("cuDNN")   # install only for GPU machines
 Pkg.add("MLJ")
 Pkg.add("MLJFlux")
 Pkg.add("MLUtils")
