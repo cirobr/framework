@@ -1,7 +1,7 @@
 # https://github.com/JuliaPy/PyCall.jl
 
 # setup environment
-condaenv = "tf-gpu"
+condaenv = "tf"
 
 using Pkg
 using PyCall
