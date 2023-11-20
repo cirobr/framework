@@ -1,7 +1,7 @@
-### addition to the end of .bashrc
+### julia addition to .bashrc
 export PATH="$PATH:$HOME/julias/julia-1.9.3/bin"
 # export DISPLAY=:1                   # servers only
-export JULIA_NUM_THREADS=10           # export JULIA_NUM_THREADS=4
+export JULIA_NUM_THREADS=4
 export JULIA_PKG_USE_CLI_GIT=true     # https://github.com/GunnarFarneback/LocalRegistry.jl/blob/master/docs/ssh_keys.md
 export JULIA_CUDA_MEMORY_POOL=none    # https://cuda.juliagpu.org/stable/usage/memory/#Garbage-collection
 # export CUDA_VISIBLE_DEVICES='1'
