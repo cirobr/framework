@@ -1,6 +1,11 @@
 # https://github.com/JuliaPy/PyCall.jl
 
-# setup environment
+# setup julia environment
+using Pkg
+envpath = expanduser("~/juliaenvs/dev/")
+Pkg.activate(envpath)
+
+# setup python environment
 condaenv = "tf"
 
 using Pkg
