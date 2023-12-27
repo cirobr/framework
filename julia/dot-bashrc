@@ -1,7 +1,9 @@
 ### julia addition to .bashrc
-export PATH="$PATH:$HOME/julias/julia-1.9.4/bin"
+### install: tar -xzvf
+export PATH="$PATH:$HOME/julias/julia-1.10.0/bin"
 # export DISPLAY=:1                   # servers only
-export JULIA_NUM_THREADS=4
+export JULIA_NUM_THREADS=4            # https://docs.julialang.org/en/v1/manual/multi-threading/
+export JULIA_IMAGE_THREADS=4          # https://julialang.org/blog/2023/12/julia-1.10-highlights/#parallel_native_code_generation_for_system_images_and_package_images
 export JULIA_PKG_USE_CLI_GIT=true     # https://github.com/GunnarFarneback/LocalRegistry.jl/blob/master/docs/ssh_keys.md
 export JULIA_CUDA_MEMORY_POOL=none    # https://cuda.juliagpu.org/stable/usage/memory/#Garbage-collection
 # export CUDA_VISIBLE_DEVICES='1'
