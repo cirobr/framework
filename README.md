@@ -1,6 +1,5 @@
 # Embedded Julia framework
-Installation scripts for the development of embedded Linux deep learning apps\
-(work in progress)
+Installation scripts for embedded Linux framework
 
 ### Scripts:
 * Linux
