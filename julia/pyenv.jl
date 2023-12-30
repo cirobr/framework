@@ -6,7 +6,7 @@ envpath = expanduser("~/juliaenvs/dev/")
 Pkg.activate(envpath)
 
 # setup python environment
-condaenv = "tf"
+condaenv = "tfgpu"
 
 using Pkg
 using PyCall
