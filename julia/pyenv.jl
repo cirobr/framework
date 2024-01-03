@@ -8,7 +8,6 @@ Pkg.activate(envpath)
 # setup python environment
 condaenv = "tfgpu"
 
-using Pkg
 using PyCall
 ENV["PYTHON"] = expanduser("~/miniconda3/envs/" * condaenv * "/bin/python3")
 # ENV["PYTHON"] = ""   # back to default conda/julia
