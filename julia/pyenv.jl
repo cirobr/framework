@@ -2,7 +2,7 @@
 
 # setup julia environment
 using Pkg
-envpath = expanduser("~/juliaenvs/dev/")
+envpath = expanduser("~/envs/dev/")
 Pkg.activate(envpath)
 
 # setup python environment
