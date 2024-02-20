@@ -9,17 +9,12 @@ sysimg = expanduser("~/sysimgs/ml.so")
 pkgs = ["UNet",
         "PreprocessingImages",
         "LibML",
-        "CocoTools",
-        "PascalVocTools",
-        "CUDA", "LibCUDA",
         "Flux",
-        "Metalhead",
         "Images",
         "DataFrames",
         "CSV",
         "JLD2",
         "FLoops",
-        "TensorBoardLogger", "Logging",
 ]
 precomp = expanduser("warmup-sysimage.jl")
 
