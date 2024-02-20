@@ -5,6 +5,7 @@ Pkg.activate( expanduser("~/envs/dev/") )
 # libraries
 using Flux
 using UNet; const u=UNet
+using Metalhead; const m=Metalhead
 using LibML
 
 # data
@@ -25,6 +26,7 @@ modelcpu(X)
 
 modelcpu = u.UNet5(3,1)
 modelcpu(X)
-optimizerState = Flux.setup(modelOptimizer, modelcpu)
-LibML.trainModel!(modelcpu, data, optimizerState, lossFunction)
-LibML.evaluateModel(modelcpu, data, lossFunction, [])
+
+backbone = m.backbone( ResNet(50; pretrain=true) )
+modelcpu = m.UNet((512,512), 3, 1, backbone)
+modelcpu(X)
