@@ -6,8 +6,12 @@ using PackageCompiler
 mkpath(expanduser("~/sysimgs/"))
 sysimg = expanduser("~/sysimgs/ml.so")
 
-pkgs = ["CUDA",
-        "LibCUDA",
+pkgs = ["UNet",
+        "PreprocessingImages",
+        "LibML",
+        "CocoTools",
+        "PascalVocTools",
+        "CUDA", "LibCUDA",
         "Flux",
         "Metalhead",
         "Images",
@@ -16,11 +20,6 @@ pkgs = ["CUDA",
         "JLD2",
         "FLoops",
         "TensorBoardLogger", "Logging",
-        "UNet",
-        "PreprocessingImages",
-        "LibML",
-        "CocoTools",
-        "PascalVocTools",
 ]
 precomp = expanduser("warmup-sysimage.jl")
 
