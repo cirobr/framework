@@ -1,21 +1,43 @@
 # environment
 using Pkg
-Pkg.activate( expanduser("~/juliaenvs/unetflux/") )
+Pkg.activate( expanduser("~/envs/dev/") )
 
 # libraries
-using UNetFlux; u=UNetFlux
+using Flux
+using Metalhead; const m=Metalhead
+using UNet; const u=UNet
 using LibML
-include( expanduser("~/projects/pesquisa/unetflux/preprocessing.jl") )
 
-# model
-alpha        = 1/8 |> Float32
-T            = 1.0f0
-drop_out     = 0.1f0
-kf           = 1.0f0
-modelcpu     = u.UNet2(1,1; alpha=alpha, T=T, drop_out=drop_out, kf=kf)
-modelAddress = expanduser("~/models/membrane-unet/unet2-model_state-2023-09-24T11-52-59-631.bson")
-LibML.loadModelState(modelAddress, modelcpu)
+# data
+X = rand(Float32, (256,256,3,1))
+Y = rand(Bool, (256,256,1,1))
+data = Flux.DataLoader((X, Y), batchsize=1)
+η = 1e-4
+modelOptimizer = Flux.Adam(η)
 
-# warmup
-x = _prepX(rand(Float32, (128,128,1)))
-modelcpu(x)
+# unet
+modelcpu = u.UNet2(3,1)
+optimizerState = Flux.setup(modelOptimizer, modelcpu)
+Flux.train!(modelcpu, data, optimizerState) do m, x, y
+    LibML.IoU_loss(m(x), y)
+end
+
+modelcpu = u.UNet4(3,1)
+optimizerState = Flux.setup(modelOptimizer, modelcpu)
+Flux.train!(modelcpu, data, optimizerState) do m, x, y
+    LibML.IoU_loss(m(x), y)
+end
+
+modelcpu = u.UNet5(3,1)
+optimizerState = Flux.setup(modelOptimizer, modelcpu)
+Flux.train!(modelcpu, data, optimizerState) do m, x, y
+    LibML.IoU_loss(m(x), y)
+end
+
+# metalhead
+backbone = m.backbone( ResNet(50; pretrain=true) )
+modelcpu = m.UNet((512,512), 3, 1, backbone)
+optimizerState = Flux.setup(modelOptimizer, modelcpu)
+Flux.train!(modelcpu, data, optimizerState) do m, x, y
+    LibML.IoU_loss(m(x), y)
+end
