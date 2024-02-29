@@ -14,7 +14,6 @@ Pkg.add("IJulia")
 Pkg.add(url="git@github.com:cirobr/PreprocessingImages.jl.git")
 Pkg.add(url="git@github.com:cirobr/TinyMachines.jl.git")
 Pkg.add(url="git@github.com:cirobr/LibML.jl.git")
-Pkg.add(url="git@github.com:cirobr/LibCUDA.jl.git")
 Pkg.add(url="git@github.com:cirobr/PascalVocTools.jl.git")
 
 
@@ -57,6 +56,7 @@ Pkg.add("PackageCompiler")
 # cuda
 # Pkg.add("CUDA")
 # Pkg.add("cuDNN")
+# Pkg.add(url="git@github.com:cirobr/LibCUDA.jl.git")
 # using CUDA
 # if CUDA.has_cuda_gpu()   CUDA.versioninfo()   end
 
