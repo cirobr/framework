@@ -8,7 +8,5 @@ Installation scripts for embedded Linux framework
 * Julia
 * Docker
 * CVAT
-
-### Other scripts:
 * Miniconda
 * R
