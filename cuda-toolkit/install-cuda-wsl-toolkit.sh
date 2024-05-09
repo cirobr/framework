@@ -25,5 +25,4 @@ sudo apt -y install nvidia-gds
 rm *.deb
 
 ### install cudnn
-# https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux
-# sudo apt-get -y install cudnn9-cuda-12
+# https://developer.nvidia.com/cudnn-downloads
