@@ -19,7 +19,6 @@ sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt update
 sudo apt -y install cuda
 sudo apt -y install nvidia-gds
-# sudo apt-get -y install cuda-toolkit-12-4
 
 # cleanup
 rm *.deb
