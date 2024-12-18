@@ -1,6 +1,10 @@
+# channels
 conda config --add channels conda-forge
-
 conda config --add channels nvidia
 conda config --add channels pytorch
 conda config --add channels huggingface
 conda config --add channels robostack
+
+# install
+conda install tensorflow-gpu numpy
+conda install pytorch torchvision torchaudio numpy
