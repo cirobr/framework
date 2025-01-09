@@ -6,5 +6,5 @@ conda config --add channels huggingface
 conda config --add channels robostack
 
 # install
-conda install tensorflow-gpu numpy
+conda install tensorflow
 conda install pytorch torchvision torchaudio numpy
