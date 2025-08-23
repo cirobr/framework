@@ -2,8 +2,8 @@
 using Pkg
 using PkgTemplates
 
-# replace "Mylib" with the actual package name, don't forget ".jl"
-lib      = "Mylib.jl"
+# replace "MyPackage" with the actual package name, don't forget ".jl"
+lib      = "MyPackage.jl"
 path     = expanduser("~/projects/")
 fullpath = path * lib
 
